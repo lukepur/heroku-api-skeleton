@@ -1,4 +1,4 @@
-require('newrelic');
+if (process.env.NEW_RELIC_KEY) require('newrelic');
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
